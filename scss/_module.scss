@@ -4,4 +4,35 @@ Module Rules
     When defining the rule set for a module, avoid using IDs and element selectors, sticking only to class names. A module will likely contain a number of elements and there is likely to be a desire to use descendent or child selectors to target those elements. 
 */
 
+nav[role="navigation"] {
+    color: #fff;
+    border: 1px solid $background-color;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top: none;
+    margin-left: 10px;
+    margin-bottom: 0;
+    padding: 4px 10px 0px 10px;
+    position: fixed;
+}
 
+nav[role="navigation"] ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav[role="navigation"] ul li {
+    display: inline-block;
+    margin: 0 6px 0 0;
+    padding: 0;
+}
+
+nav[role="navigation"] ul li:last-of-type {
+    margin: 0;
+}
+
+.logo {
+    max-width: 100%;
+        
+}
