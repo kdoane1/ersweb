@@ -13,6 +13,7 @@ nav[role="navigation"]{
 header[role="banner"]{
     min-height:180px;
     background-color: lighten($color,50%);
+    margin-top: 25px;
     margin-bottom: $gutters;
 }
 
