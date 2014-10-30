@@ -5,27 +5,41 @@ Module Rules
 */
 
 nav[role="navigation"] {
-    color: #fff;
+    background-color: #fff;
     border: 1px solid $background-color;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top: none;
     margin-left: 10px;
-    padding: 4px 10px 0px 10px;
+    padding: 4px 10px 6px 10px;
     position: fixed;
 }
 
-nav[role="navigation"] ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
 }
 
-nav[role="navigation"] ul li {
-    display: inline-block;
-    margin: 0 6px 0 0;
-    padding: 0;
+nav ul li {
+display: inline-block;
+margin: 0 6px 0 0;
+padding: 0;
 }
 
-nav[role="navigation"] ul li:last-of-type {
-    margin: 0;
+nav ul li:last-of-type {
+margin-right: 0;
+}
+
+a {
+color: $color;
+//@include body-font-bold;
+transition: color 350ms linear;
+}
+
+a:hover {
+color: lighten($color,40%);
+transition: color 350ms linear;
 }
 
 .logo {
