@@ -7,12 +7,13 @@ Layout Rules
 nav[role="navigation"]{
     background-color: $background-color;
     margin-bottom: $gutters;
+    margin-top: -$gutters*2;
 }
 
 header[role="banner"]{
     min-height:180px;
     background-color: lighten($color,50%);
-    margin-top: 30px;
+    margin-top: $gutters*2;
     margin-bottom: $gutters;
 }
 
@@ -97,25 +98,26 @@ footer[role="contentinfo"] {
 .contentinfo-social, .contentinfo-sitemap, .contentinfo-contactinfo {
     box-sizing: border-box;
     float: left;
+    padding: $gutters $gutters $gutters $gutters ;
 }
 
 .contentinfo-social {
     width: 33.333333%;
-        @media(max-width:768px) {
+        @media(max-width:350px) {
             width: 100%;
         }
 }
 
 .contentinfo-sitemap {
     width: 33.333333%;
-        @media(max-width:768px) {
+        @media(max-width:350px) {
             width: 100%;
         }
 }
 
 .contentinfo-contactinfo {
     width: 33.333333%;
-        @media(max-width:768px) {
+        @media(max-width:350px) {
             width: 100%;
         }
 }
