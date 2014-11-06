@@ -13,3 +13,8 @@ $(function() {
     }
   });
 });
+
+//responsive nav
+$(document).ready(function() {
+  $('.nav-wrapper').horizontalNav();
+});

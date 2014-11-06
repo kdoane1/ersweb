@@ -22,5 +22,6 @@
 }());
 
 // Place any jQuery/helper plugins below this line.
+// @prepros-append vendor/jquery.horizontalNav.js
 
 
